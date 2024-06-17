@@ -1,0 +1,12 @@
+ [req]
+ distinguished_name = dn
+ prompt = no
+
+ [ dn ]
+ countryName            = JP
+ stateOrProvinceName    = Tokyo
+ localityName           = City
+ organizationName       = Organization
+ OU                     = Unit
+ commonName             = local.example.com
+ emailAddress           = drupal@example.com

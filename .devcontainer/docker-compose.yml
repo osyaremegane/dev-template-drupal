@@ -1,0 +1,35 @@
+version: '3'
+
+services: 
+  app:
+    hostname: "app"
+    container_name: "drupal-app"
+    build:
+      context: .
+      dockerfile: ./web.Dockerfile
+    ports:
+      - "443:443"
+    volumes:
+      - ../..:/workspaces:cached
+      - ../sync/config:/opt/drupal/sync/config:cached
+      - ../private:/opt/drupal/private
+    restart: unless-stopped
+    depends_on:
+      - db
+    networks:
+      - "drupal"
+    command: sleep infinity
+      
+  db:
+    hostname: "db"
+    container_name: "drupal-db"
+    build:
+      context: .
+      dockerfile: ./db.Dockerfile
+    ports:
+      - "3306:3306"
+    networks:
+      - "drupal"
+
+networks:
+  drupal:

@@ -40,10 +40,13 @@ URL：https://localhost
   scripts ： コンテナビルド時、コンテナ起動時に実行するスクリプトファイルを配置
   devcontainer.json ： Dev Container拡張機能で利用する設定ファイル
   docker-compose.yml ： Dockerコンテナを管理するための設定ファイル
-  db.Dockerfile ： データベース用のDockerコンテナ設定ファイル
+  db.Dockerfile ： データベース用のDockerコンテナ設定ファイル  
   web.Dockerfile ： ウェブサーバ用のDockerコンテナ設定ファイル
-.gitignore ： 
+
+.gitignore ： 構成管理の対象外リストファイル
+
 private : Drupalの設定フォルダ(private)
+
 sync/config ： Drupalの構成ファイル一式(Drush cexコマンドでエクスポートしたもの)
 ```
 
