@@ -49,3 +49,19 @@ private : Drupalの設定フォルダ(private)
 
 sync/config ： Drupalの構成ファイル一式(Drush cexコマンドでエクスポートしたもの)
 ```
+
+### プロキシ配下で実行する場合
+以下のファイルの該当箇所をコメントアウトし、プロキシ情報を記載してください。    
+※ WSL、Dockerのプロキシ設定は個別に実施してください。  
+・/dev-template-drupal/composer.json
+```
+"config": {
+        // "proxy": "http://[ServerName]:[PortNo]"
+}
+```
+
+・dev-template-drupal/.devcontainer/web.Dockerfile
+```
+# RUN pear config-set http_proxy http://[ServerName]:[PortNo]/
+
+```
