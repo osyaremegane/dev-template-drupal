@@ -49,8 +49,3 @@ private : Drupalの設定フォルダ(private)
 
 sync/config ： Drupalの構成ファイル一式(Drush cexコマンドでエクスポートしたもの)
 ```
-
-### ライセンス
-MIT License
-
-Copyright (c) 2024 osyaremegane
