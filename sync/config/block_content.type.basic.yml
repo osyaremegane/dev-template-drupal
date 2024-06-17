@@ -1,0 +1,10 @@
+uuid: 836bb1f9-ec1a-42ef-a33a-7716cd3e71ab
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zglzjmYxi0G0ag9MZ02y0LSJOdpWRwJxyP_OvFojFyo
+id: basic
+label: 基本ブロック2
+revision: 0
+description: 基本ブロックはタイトルと本文を持ちます。

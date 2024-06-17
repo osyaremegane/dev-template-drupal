@@ -1,0 +1,13 @@
+uuid: cfb4897e-48ca-45e9-a623-c8919e589d7e
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
+id: node_promote_action
+label: コンテンツをトップページに表示する
+type: node
+plugin: node_promote_action
+configuration: {  }

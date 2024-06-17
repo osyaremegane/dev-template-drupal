@@ -1,0 +1,14 @@
+uuid: 3c6abbc3-93e1-4e26-aec4-c93ae428cb21
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: ウェブサイトフィードバック
+recipients:
+  - admin@example.com
+reply: ''
+weight: 0
+message: メッセージは送信されました
+redirect: ''

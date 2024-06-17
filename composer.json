@@ -1,0 +1,8 @@
+{
+    "require": {
+        "drush/drush": "^12.5"
+    },
+    "config": {
+        // "proxy": "http://[ServerName]:[PortNo]"
+    }
+}
